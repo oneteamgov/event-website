@@ -1,4 +1,8 @@
 // import libs and polyfills
-import $ from "jquery";
+import $ from "jquery"
 
-// begin the site code
+if($) {
+  $(function(){
+    console.log('ready!')
+  })
+}
