@@ -8,18 +8,10 @@
     <title>{{ title }}</title>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-touch-fullscreen" content="YES">
-    <meta property="og:title" content="">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="">
-    <meta property="og:site_name" content="">
-    <meta name="application-name" content="">
     <link rel="dns-prefetch" href="">
     <link rel="preload" href="{{ assetPath }}/js/app.js" as="script">
 </head>
 <body>
-  <div class="skip">
-    <a class="btn btn-skip" tabindex="0" href="content">Skip to main content</a>
-  </div>
   <main id="content">
     {% block content %}{% endblock %}
   </main>
