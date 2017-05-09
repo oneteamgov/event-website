@@ -19,3 +19,7 @@ CSS is written from precompiled Sass and which lives within `src/assets/scss/`
 Javascript lives in `assets/js/` and uses Babelify + Browserify to bundle into app.js
 
 Explore the `./gulpfile.js` for the inner workings.
+
+## Hosting & Deployment
+
+Currently the OneTeamGov website is using Netlify to deploy the site statically under HTTPS for free. 
