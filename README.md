@@ -10,7 +10,7 @@ Clone this repository and run:
 
 `npm install && npm start`
 
-##Overview
+## Overview
 
 All pages/templates live within `src/templates/views/` directory. Templates are written in [Mozzila Nunjucks](http://mozilla.github.io/nunjucks/getting-started.html).
 
