@@ -12,6 +12,8 @@ Clone this repository and run:
 
 ## Templating
 
-All pages/templates live within `src/templates/views/` directory. Templates are written in [Mozzila Nunjucks](http://mozilla.github.io/nunjucks/getting-started.html)
+All pages/templates live within `src/templates/views/` directory. Templates are written in [Mozzila Nunjucks](http://mozilla.github.io/nunjucks/getting-started.html).
+
 CSS is written from precompiled Sass and which lives within `src/assets/scss/`
+
 Javascript lives in `assets/js/` and used Babelify + Browserify to bundle into app.js
