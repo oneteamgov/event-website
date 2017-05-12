@@ -12,9 +12,74 @@
     <link rel="preload" href="{{ assetPath }}/js/app.js" as="script">
 </head>
 <body>
+
+  <header class="c-global-header">
+    <div class="o-contain">
+      <div class="o-layout o-layout--middle">
+        <div class="o-layout__item u-1/1 u-1/3@medium">
+          <h1 class="c-global-header__title">
+            <img src="/assets/img/logo.svg" alt="One Team Gov unconference" class="c-global-header__logo">
+          </h1>
+        </div>
+        <div class="o-layout__item u-1/1 u-2/3@medium">
+          <nav class="c-primary-navigation">
+            <ul class="c-primary-navigation__list">
+              <li class="c-primary-navigation__item">
+                <a href="#" class="c-primary-navigation__link">Overview</a>
+              </li>
+              <li class="c-primary-navigation__item">
+                <a href="#" class="c-primary-navigation__link">When & Where</a>
+              </li>
+              <li class="c-primary-navigation__item">
+                <a href="#" class="c-primary-navigation__link">Organisers</a>
+              </li>
+              <li class="c-primary-navigation__item">
+                <a href="#" class="c-primary-navigation__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
   <main id="content">
-    {% block content %}{% endblock %}
+
+    <article class="c-primary-cta">
+
+      <div class="c-primary-cta__content">
+
+        <div class="o-contain">
+
+          <div class="o-layout">
+            <div class="o-layout__item u-1/2">
+
+              <div class="c-primary-cta__intro">
+
+                <p>Calling all</p>
+                <p class="c-banner-text">
+                  <span class="c-banner-text__line">Doers, </span>
+                  <span class="c-banner-text__line">Thinkers & </span>
+                  <span class="c-banner-text__line">Explainers.</span>
+                </p>
+                <p>One Team Government brings together UK policy makers, service designers, digital professionals and cross-sector experts to talk openly and creatively about making government in the UK more effective by working together.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
   </main>
+
+  <footer>
+    footer
+  </footer>
   <script src="{{ assetPath }}/js/app.js"></script>
 </body>
 </html>

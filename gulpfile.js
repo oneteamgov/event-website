@@ -25,6 +25,7 @@ const source = require('vinyl-source-stream')
 const buffer = require('vinyl-buffer')
 const runSequence = require('run-sequence')
 const nunjucksRender = require('gulp-nunjucks-render')
+const nunjucksFilters = require('./filters')
 
 // Banner
 const banner = [
@@ -109,6 +110,15 @@ function jsCore() {
 }
 
 function html() {
+
+  var manageEnvironment = function(env) {
+
+    Object.keys(nunjucksFilters).forEach(function (filterName) {
+      env.addFilter(filterName, nunjucksFilters[filterName])
+    })
+
+  }
+
   return gulp
     .src(`${paths.src.html}views/**/*.html`)
     .pipe(plumber({ errorHandler: onError }))
@@ -120,13 +130,18 @@ function html() {
         }
       })
     )
-    .pipe(nunjucksRender({ path: paths.src.html }))
+    .pipe(nunjucksRender({
+      path: paths.src.html,
+      manageEnv: manageEnvironment
+    }))
     .pipe(gulp.dest(paths.dest.html))
 }
 
 function scss() {
   return gulp
-    .src([`${paths.src.css}**/*.scss`, `!${paths.src.css}{fonts,kss}/*.*`])
+    .src([
+      `${paths.src.css}**/*.scss`,
+      `!${paths.src.css}{fonts,kss}/*.*`])
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sourcemaps.init())
     .pipe(sass())
@@ -160,7 +175,8 @@ function serve() {
     notify: false,
     // https: true,
     server: [outputDir],
-    tunnel: false
+    tunnel: false,
+    open: false
   })
   watch(reload)
 }

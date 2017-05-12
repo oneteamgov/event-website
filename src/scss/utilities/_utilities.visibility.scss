@@ -1,0 +1,12 @@
+.u-visuallyhidden{
+  position:absolute;left:-9999em;top:auto;width:1px;height:1px;overflow:hidden
+}
+
+.u-visuallyhidden.u-focusable:active,
+.u-visuallyhidden.u-focusable:focus{
+  clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto
+}
+
+.u-invisible{
+  visibility:hidden
+}

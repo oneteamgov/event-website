@@ -1,20 +1,32 @@
 @charset "UTF-8";
 
-html,body {
-  height: 100%;
-  overflow-y: hidden;
-}
+// lowest level utility functions
+@import "tools/tools.utils";
 
-html {
-  background: #F6EEDF;
-}
+// settings
+@import 'settings/settings.base';
 
-h1 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
+// tools
+@import '../../node_modules/sass-mq/mq';
+@import "tools/tools.aspectratio";
+
+// generic
+@import 'generic/generic.sanitise';
+@import 'generic/generic.reset';
+
+//objects
+@import 'objects/objects.layout';
+
+// elements
+@import 'elements/elements.page';
+@import 'elements/elements.headings';
+
+// components
+@import 'components/components.global-header';
+@import 'components/components.primary-navigation';
+@import 'components/components.primary-cta';
+@import 'components/components.banner-text';
+
+// utility classes
+@import 'utilities/utilities.widths';
+@import 'utilities/utilities.visibility';

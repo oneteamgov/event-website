@@ -1,0 +1,25 @@
+.c-primary-navigation {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  &__item {
+    display: block;
+    text-align: center;
+    @include mq($from: medium) {
+      display: inline-block;
+      text-align: left;
+    }
+    margin: 0 1rem;
+    font-size: 1.4rem;
+    color: #333;
+    .wf-active & {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+    }
+  }
+  &__link {
+    text-decoration: none;
+  }
+}

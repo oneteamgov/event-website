@@ -1,0 +1,22 @@
+.c-primary-cta {
+
+  // border-top: 1px solid #333;
+  // border-bottom: 1px solid #333;
+  padding: 0;
+  background: transparent url(/assets/img/cta_bg.jpg) no-repeat 50% 0%;
+
+  @include mq($from: medium) {
+    background-size: cover;
+    @include aspect-ratio(640,247,'.c-primary-cta__content');
+  }
+
+  &__intro {
+    border-radius: 10px;
+    color: #fff;
+    padding: 4rem 2rem;
+    line-height: 1.7;
+    font-size: 1.6rem;
+    font-family: georgia;
+  }
+
+}
