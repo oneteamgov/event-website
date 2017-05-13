@@ -1,25 +1,80 @@
 .c-primary-navigation {
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  &__item {
-    display: block;
-    text-align: center;
-    @include mq($from: medium) {
-      display: inline-block;
-      text-align: left;
-    }
-    margin: 0 1rem;
-    font-size: 1.4rem;
-    color: #333;
-    .wf-active & {
-      font-family: 'Roboto', sans-serif;
-      font-weight: bold;
-    }
-  }
+
+  @include clearfix;
+
   &__link {
     text-decoration: none;
   }
+
+  @include mq($until: medium) {
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      text-align: left;
+    }
+
+    &__item {
+      width: 50%;
+      float: left;
+      font-size: 1.2rem;
+      text-align: center;
+      .wf-active & {
+        font-family: 'Roboto', sans-serif;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      padding: 0.75rem 0.5rem;
+      text-transform: uppercase;
+      background: #000;
+      background: rgba(#000,0.7);
+      border-radius: 3px;
+      margin: 1px;
+    }
+  }
+
+  @include mq($from: medium) {
+
+    &__list {
+      text-align: right;
+    }
+
+    &__item {
+      display: inline-block;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-right: 1em;
+    }
+
+  }
+
+  @include mq($from: large) {
+
+    &__list {
+
+    }
+
+    &__item {
+      font-size: 1.3rem;
+    }
+
+  }
+
+  @include mq($from: xlarge) {
+
+    &__list {
+
+    }
+
+    &__item {
+      font-size: 1.5rem;
+    }
+
+  }
+
 }

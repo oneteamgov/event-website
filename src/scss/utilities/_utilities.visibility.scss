@@ -1,12 +1,26 @@
-.u-visuallyhidden{
-  position:absolute;left:-9999em;top:auto;width:1px;height:1px;overflow:hidden
+.u-visuallyhidden {
+  @include visuallyhidden;
+  @if (variable-exists(mq-breakpoints)) {
+    @each $otg-bp-name, $otg-bp-value in $mq-breakpoints {
+      @include mq($from: $otg-bp-name) {
+        &\@#{$otg-bp-name} {
+          @include visuallyhidden;
+        }
+      }
+    }
+  }
 }
 
 .u-visuallyhidden.u-focusable:active,
-.u-visuallyhidden.u-focusable:focus{
-  clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto
+.u-visuallyhidden.u-focusable:focus {
+  clip:auto;
+  height:auto;
+  margin:0;
+  overflow:visible;
+  position:static;
+  width:auto;
 }
 
-.u-invisible{
+.u-invisible {
   visibility:hidden
 }

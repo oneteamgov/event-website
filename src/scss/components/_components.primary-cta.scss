@@ -1,22 +1,76 @@
 .c-primary-cta {
 
-  // border-top: 1px solid #333;
-  // border-bottom: 1px solid #333;
   padding: 0;
-  background: transparent url(/assets/img/cta_bg.jpg) no-repeat 50% 0%;
-
-  @include mq($from: medium) {
-    background-size: cover;
-    @include aspect-ratio(640,247,'.c-primary-cta__content');
-  }
+  background: transparent url(/assets/img/cta_bg.jpg) no-repeat 50% 50%;
 
   &__intro {
-    border-radius: 10px;
+    font-family: $webfont-a;
     color: #fff;
-    padding: 4rem 2rem;
-    line-height: 1.7;
-    font-size: 1.6rem;
-    font-family: georgia;
+    padding: 2rem;
+    font-size: 1.25rem;
+  }
+
+  &__headline {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+
+  &__countdown {
+
+    display: block;
+
+    @include mq($until: medium) {
+      text-align: center;
+    }
+
+    @include mq($from: medium) {
+      margin-bottom: 2vw;
+    }
+
+    &-timer {
+      margin-bottom: 0.5em;
+    }
+
+    &-link {
+      display: block;
+  		text-align: center;
+  		@include mq($from: medium) {
+  			display: inline-block;
+  		}
+  		padding: 0.5em 0.5em;
+  		line-height: 1;
+  		background: black;
+  		background: rgba(#000,0.5);
+  		color: white;
+  		text-decoration: none;
+  		border-radius: $otg-base-radius;
+  		&:hover {
+  			background: #000;
+  		}
+    }
+
+  }
+
+  @include mq($from: medium) {
+
+    background-position: 0% 0%;
+    background-size: cover;
+
+    @include aspect-ratio(640,247,'.c-primary-cta__content');
+
+    &__intro {
+      padding: 4vw 0;
+      line-height: 1.6;
+      font-size: 2vw;
+    }
+
+    &__headline {
+      font-size: 5vw;
+      line-height: 1.1;
+      font-weight: bold;
+    }
+
   }
 
 }

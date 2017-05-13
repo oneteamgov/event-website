@@ -9,6 +9,8 @@
 // tools
 @import '../../node_modules/sass-mq/mq';
 @import "tools/tools.aspectratio";
+@import "tools/tools.visuallyhidden";
+@import "tools/tools.clearfix";
 
 // generic
 @import 'generic/generic.sanitise';
@@ -16,6 +18,7 @@
 
 //objects
 @import 'objects/objects.layout';
+@import 'objects/objects.banner-text';
 
 // elements
 @import 'elements/elements.page';
@@ -26,7 +29,9 @@
 @import 'components/components.primary-navigation';
 @import 'components/components.primary-cta';
 @import 'components/components.banner-text';
+@import 'components/components.page-section';
 
 // utility classes
 @import 'utilities/utilities.widths';
 @import 'utilities/utilities.visibility';
+@import 'utilities/utilities.clearfix';

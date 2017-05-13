@@ -1,8 +1,13 @@
 .c-banner-text {
-  font-size: 4rem;
-  line-height: 1.2;
+  // font-size: 6.5rem;
+  line-height: 1;
   font-family: $webfont-a;
   &__line {
     display: block;
+  }
+  &--bold & {
+    &__line {
+      font-weight: bold;
+    }
   }
 }

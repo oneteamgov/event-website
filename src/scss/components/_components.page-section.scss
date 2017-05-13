@@ -1,0 +1,35 @@
+.c-page-section {
+
+  padding: 1.5rem;
+
+  li {
+    margin-bottom: 0.5em;
+  }
+
+  @include mq($from: medium) {
+    padding-left: 0;
+    padding-right: 0;
+
+    &__heading {
+      border-bottom: 3px solid black;
+    }
+
+  }
+
+  @include mq($from: large) {
+
+    padding: 2.6rem 0;
+
+    &__heading {
+      font-size: 3.5rem;
+      border-bottom: 6px solid black;
+    }
+
+    p, li {
+      color: #333;
+      font-size: 1.6vw;
+    }
+
+  }
+
+}
