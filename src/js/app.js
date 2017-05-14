@@ -4,8 +4,6 @@ import countdown from 'countdown'
 import scrollIt from './scrollIt.js'
 import './timer.js'
 
-console.log(scrollIt);
-
 var otg = {}
 
 otg.settings = {
@@ -42,8 +40,7 @@ otg.scrollTo = function scrollTo() {
       scrollIt(
         document.querySelector(link.getAttribute('href')),
         300,
-        'easeOutQuad',
-        () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+        'easeOutQuad'
       );
     });
 
