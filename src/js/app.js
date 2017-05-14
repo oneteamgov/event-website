@@ -40,7 +40,7 @@ otg.scrollTo = function scrollTo() {
     link.addEventListener('click', () => {
       scrollIt(
         document.querySelector(link.getAttribute('href')),
-        300,
+        450,
         'easeOutQuad'
       );
     });
