@@ -1,3 +1,10 @@
+<!--
+  oneteamgov.uk was designed and built with ❤ over a tea fuelled
+  weekend in May 2017 by Paul Smith (@paulmsmith).
+
+  Any bugs, suggestions or pull requests can be filed here:
+  https://github.com/oneteamgov/website
+-->
 {% import "partials/macros.html" as ui %}
 <!DOCTYPE html>
 <html lang="en" class="no-webfonts no-js">
@@ -81,29 +88,35 @@
 
         <div class="o-contain">
 
-          <div class="o-layout o-layout--flush">
-            <div class="o-layout__item u-1/1 u-1/2@medium">
+          <div class="c-primary-cta__intro">
 
-              <div class="c-primary-cta__intro">
+            <div class="o-layout o-layout--flush">
+
+              <div class="o-layout__item u-1/1">
+                <h1 class="c-primary-cta__title">One Team Government</h1>
+              </div>
+
+              <div class="o-layout__item u-1/1 u-1/2@medium">
 
                 <p class="o-banner-text c-primary-cta__headline">
-                  <span class="o-banner-text__line">Policy makers,</span>
-                  <span class="o-banner-text__line">Designers & </span>
+                  <span class="o-banner-text__line">Policymakers</span>
+                  <span class="o-banner-text__line">Designers</span>
                   <span class="o-banner-text__line">Doers</span>
                 </p>
 
                 <p class="c-primary-cta__countdown">
-                  <div class="c-primary-cta__countdown-timer timer"></div>
-                  <div class="c-primary-cta__action">
+                  <span class="c-primary-cta__countdown-timer timer"></span>
+                  <span class="c-primary-cta__action">
                     <a href="#" class="c-primary-cta__countdown-link">Get your tickets</a>
-                  </div>
+                  </span>
                 </p>
 
-                <p>Why should you attend? <a href="#about" class="js-scrollTrigger">Find out more</a></p>
+                {# <p>Why should you attend? <a href="#about" class="js-scrollTrigger">Find out more</a></p> #}
 
               </div>
 
             </div>
+
           </div>
 
         </div>
@@ -124,7 +137,7 @@
 
             <h3 class="c-page-section__subheading">Overview</h3>
 
-            <p>One Team Government brings together UK policy makers, service designers, digital professionals and cross-sector experts to talk openly and creatively about making government in the UK more effective by working together.  </p>
+            <p>One Team Government brings together UK policymakers, service designers, digital professionals and cross-sector experts to talk openly and creatively about making government in the UK more effective by working together.  </p>
             <p>We call this 'one team government'. It’s the idea that by bringing teams together to work in a truly multidisciplinary way, we can:</p>
 
             <ul>
@@ -232,11 +245,11 @@
                   <span class="additional-name"></span>
                   <span class="family-name"></span>
                 </span>
-                <span class="org">Impact Hub Westminster, </span>
+                <span class="org">Impact Hub Westminster<span class="u-visuallyhidden">,</span> </span>
                 <span class="adr">
-                  <span class="street-address">1st Floor New Zealand House, <span>80 Haymarket, </span></span>
-                  <span class="locality">London, </span>
-                  <span class="postal-code"><strong>SW1Y 4TE</strong></span>
+                  <span class="street-address">1st Floor New Zealand House, <span>80 Haymarket<span class="u-visuallyhidden">,</span> </span></span>
+                  <span class="locality">London<span class="u-visuallyhidden">,</span> </span>
+                  <span class="postal-code">SW1Y 4TE</span>
                 </span>
               </p>
 
@@ -354,10 +367,12 @@
   </main>
 
   <footer class="c-global-footer">
-    <div class="o-contain">
+    <div class="c-global-footer__inner">
+      <div class="o-contain">
 
-      <p>OneTeamGov 2017 &ndash; Source code</p>
+        <p>OneTeamGov 2017 &ndash; Source code</p>
 
+      </div>
     </div>
   </footer>
 
