@@ -1,7 +1,10 @@
 // import libs and polyfills
 import WebFont from 'webfontloader'
 import countdown from 'countdown'
+import scrollIt from './scrollIt.js'
 import './timer.js'
+
+console.log(scrollIt);
 
 var otg = {}
 
@@ -29,7 +32,27 @@ otg.countDown = function countDown() {
   });
 }
 
+otg.scrollTo = function scrollTo() {
+
+  let scrollLinks = document.querySelectorAll('.js-scrollTrigger')
+
+  scrollLinks.forEach((link, index) => {
+
+    link.addEventListener('click', () => {
+      scrollIt(
+        document.querySelector(link.getAttribute('href')),
+        300,
+        'easeOutQuad',
+        () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+      );
+    });
+
+  })
+
+}
+
 otg.ready = function ready() {
+  this.scrollTo()
   this.countDown()
   this.webFonts()
 }

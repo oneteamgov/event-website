@@ -49,22 +49,22 @@
           <nav class="c-primary-navigation" aria-label="Main menu">
             <ul class="c-primary-navigation__list" role="menubar">
               <li class="c-primary-navigation__item">
-                <a href="#" class="c-primary-navigation__link">About</a>
+                <a href="#about" class="c-primary-navigation__link js-scrollTrigger">About</a>
               </li>
               <li class="c-primary-navigation__item">
-                <a href="#" class="c-primary-navigation__link">Where & when</a>
+                <a href="#OnTheDay" class="c-primary-navigation__link js-scrollTrigger">On the day</a>
               </li>
               <li class="c-primary-navigation__item">
-                <a href="#" class="c-primary-navigation__link">On the day</a>
+                <a href="#whereAndWhen" class="c-primary-navigation__link js-scrollTrigger">Where & when</a>
               </li>
               <li class="c-primary-navigation__item">
-                <a href="#" class="c-primary-navigation__link">Organisers</a>
+                <a href="#organisers" class="c-primary-navigation__link js-scrollTrigger">Organisers</a>
               </li>
               <li class="c-primary-navigation__item u-visuallyhidden@medium">
-                <a href="#" class="c-primary-navigation__link">Tickets</a>
+                <a href="#tickets" class="c-primary-navigation__link js-scrollTrigger">Tickets</a>
               </li>
               <li class="c-primary-navigation__item">
-                <a href="#" class="c-primary-navigation__link">Contact</a>
+                <a href="#contact" class="c-primary-navigation__link js-scrollTrigger">Contact</a>
               </li>
             </ul>
           </nav>
@@ -113,7 +113,7 @@
 
     </article>
 
-    <article class="c-page-section">
+    <article class="c-page-section" id="about">
 
       <div class="o-contain">
 
@@ -164,7 +164,7 @@
 
     </article>
 
-    <article class="c-page-section">
+    <article class="c-page-section" id="OnTheDay">
 
       <div class="o-contain">
 
@@ -211,7 +211,7 @@
 
     </article>
 
-    <article class="c-page-section">
+    <article class="c-page-section" id="whereAndWhen">
 
       <div class="o-contain">
 
@@ -257,7 +257,7 @@
 
     </article>
 
-    <article class="c-page-section">
+    <article class="c-page-section" id="organisers">
 
       {# the is for the clip-path around the organiser thumbnails #}
       <div class="u-visuallyhidden">
@@ -352,9 +352,15 @@
 
   </main>
 
-  <footer>
-    footer
+  <footer class="c-global-footer">
+    <div class="o-contain">
+
+      <p>Footer content here</p>
+
+    </div>
   </footer>
+
   <script src="{{ assetPath }}/js/app.js"></script>
+
 </body>
 </html>
