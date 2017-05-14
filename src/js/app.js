@@ -3,6 +3,7 @@ import WebFont from 'webfontloader'
 import countdown from 'countdown'
 import scrollIt from './scrollIt.js'
 import './timer.js'
+import './polyfills.js'
 
 var otg = {}
 
