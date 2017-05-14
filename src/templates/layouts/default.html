@@ -1,3 +1,5 @@
+{% import "partials/macros.html" as ui %}
+
 <!DOCTYPE html>
 <html lang="en" class="no-webfonts no-js">
 <head>
@@ -53,7 +55,7 @@
                 <a href="#" class="c-primary-navigation__link">Where & when</a>
               </li>
               <li class="c-primary-navigation__item">
-                <a href="#" class="c-primary-navigation__link">Schedule</a>
+                <a href="#" class="c-primary-navigation__link">On the day</a>
               </li>
               <li class="c-primary-navigation__item">
                 <a href="#" class="c-primary-navigation__link">Organisers</a>
@@ -115,11 +117,13 @@
 
       <div class="o-contain">
 
+        <h2 class="c-page-section__heading">About One<span class="u-visuallyhidden">&nbsp;</span>Team<span class="u-visuallyhidden">&nbsp;</span>Gov</h2>
+
         <div class="o-layout o-layout--huge">
 
-          <div class="o-layout__item u-1/1 u-1/2@medium">
+          <div class="o-layout__item u-1/1 u-1/2@large">
 
-            <h3 class="c-page-section__heading">One<span class="u-visuallyhidden">&nbsp;</span>Team<span class="u-visuallyhidden">&nbsp;</span>Gov</h3>
+            <h3 class="c-page-section__subheading">Overview</h3>
 
             <p>One Team Government brings together UK policy makers, service designers, digital professionals and cross-sector experts to talk openly and creatively about making government in the UK more effective by working together.  </p>
             <p>We call this 'one team government'. It’s the idea that by bringing teams together to work in a truly multidisciplinary way, we can:</p>
@@ -136,12 +140,206 @@
 
           </div>
 
-          <div class="o-layout__item u-1/1 u-1/2@medium">
+          <div class="o-layout__item u-1/1 u-1/2@large">
 
-            <h3 class="c-page-section__heading">Why are we doing this?</h3>
+            <h3 class="c-page-section__subheading">Why are we doing this?</h3>
 
-<p>The civil service is united by its values of integrity, honesty, objectivity and impartiality, but different professions are still divided in their skill sets and ways of working.</p>
-<p> We want to bring together professionals who don't currently work seamlessly, to share and create specific ideas about how to work better together. Policy making and digital are our starting points but we’re not limited to these and welcome professionals from across government.</p>
+            <p>The civil service is united by its values of integrity, honesty, objectivity and impartiality, but different professions are still divided in their skill sets and ways of working.</p>
+            <p> We want to bring together professionals who don't currently work seamlessly, to share and create specific ideas about how to work better together. Policy making and digital are our starting points but we’re not limited to these and welcome professionals from across government.</p>
+
+            <p><strong>Our aim is to:</strong></p>
+
+            <ul>
+              <li>introduce different professions to one another's ways of working and increase the empathy between them</li>
+              <li>share real, practical case studies of multidisciplinary working and celebrate its benefits</li>
+              <li>talk about what holds back one team working and create new ideas of how we can work better together</li>
+              <li>hear from teams that are making it work, both inside and outside government</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+    <article class="c-page-section">
+
+      <div class="o-contain">
+
+        <h2 class="c-page-section__heading">On the day</h2>
+
+        <div class="o-layout o-layout--huge">
+
+          <div class="o-layout__item u-1/1 u-1/2@large">
+
+            <h3 class="c-page-section__subheading">The event is an unconference</h3>
+
+            <p>This means there is no pre-set agenda; attendees will create the agenda themselves on the day, through a series of pitches made at the beginning. <a href="https://civilservice.blog.gov.uk/2017/03/09/the-joys-of-unconferencing/">Clare Moriarty, the Permanent Secretary at Defra, has blogged</a> about the joys of unconferencing.</p>
+
+            <p>There will be 4 time slots through the day, with parallel sessions run in each time slot. Attendees are free to go to whichever sessions they're most interested in. The sessions are likely to be a mixture of case studies, open discussions and workshops.</p>
+
+            <h4 class="c-page-section__subheading">I've never been to an unconference before - how do I know what subjects to expect or pitch?</h4>
+
+            <p>We know some people might be nervous about the unconference approach. So, to give you a flavour of the day, we've done a bit of research into the sessions people would like to either pitch or hear.</p>
+
+          </div>
+
+          <div class="o-layout__item u-1/1 u-1/2@large">
+
+            <h3 class="c-page-section__subheading"><strong>The most popular ideas were:</strong></h3>
+
+            <ul>
+              <li>creating the right team structure for a ‘one team’ approach</li>
+              <li>how to advise ministers when you're working iteratively</li>
+              <li>what is policy making? What is digital? What is service design?</li>
+              <li>how to 'do governance' better</li>
+              <li>how we build cross-profession networks so we all get better together</li>
+              <li>bringing policy making, digital and delivery into an end to end approach</li>
+              <li>who is doing 'the agile thing' at scale, and how?</li>
+              <li>practical ways of bringing policy and delivery together</li>
+            </ul>
+
+            <p>The list is just a sample. On the day people might pitch all or none of those ideas - it’s up to everyone attending to decide what’s most important to them.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+    <article class="c-page-section">
+
+      <div class="o-contain">
+
+        <h2 class="c-page-section__heading">Where & When</h2>
+
+        <div class="o-layout o-layout--huge">
+
+          <div class="o-layout__item u-1/1 u-1/2@large">
+
+            <h3 class="c-page-section__subheading">Venue</h3>
+
+              <p><img src="/assets/img/venue.jpg" alt="A photograph of building and entrance"></p>
+
+              <p><strong>Address</strong></p>
+
+              <p id="venueAddress" class="vcard">
+                <span class="fn n">
+                  <span class="given-name"></span>
+                  <span class="additional-name"></span>
+                  <span class="family-name"></span>
+                </span>
+                <span class="org">Impact Hub Westminster, </span>
+                <span class="adr">
+                  <span class="street-address">1st Floor New Zealand House, <span>80 Haymarket, </span></span>
+                  <span class="locality">London, </span>
+                  <span class="postal-code"><strong>SW1Y 4TE</strong></span>
+                </span>
+              </p>
+
+          </div>
+
+          <div class="o-layout__item u-1/1 u-1/2@large">
+
+            <h3 class="c-page-section__subheading">Schedule</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+    <article class="c-page-section">
+
+      {# the is for the clip-path around the organiser thumbnails #}
+      <div class="u-visuallyhidden">
+        <svg>
+          <defs>
+            <clipPath id="diamond" clipPathUnits="objectBoundingBox">
+              <polygon points=".5,0 1,.5 .5,1 0,.5" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="o-contain">
+
+        <h2 class="c-page-section__heading">Organisers</h2>
+
+        <div class="o-layout o-layout--huge">
+
+          <div class="o-layout__item u-1/1 u-1/1@large">
+
+            {% call ui.personCard({
+              name: 'Kit Collingwood-Richardson',
+              twitter: 'kitterati',
+              photo: 'kit.jpg'
+            }) %}
+              <p>I work for the Universal Credit programme at the Department for Work and Pensions, focusing on data. Before that I was at the Ministry of Justice from 2009-2016. I’ve been in digital government since 2012, and before that I was a policy maker. I am passionate about government reform in its widest sense, as well as the transformative power of technology, and about equality and diversity.</p>
+            {% endcall %}
+
+            {% call ui.personCard({
+              name: 'David Buck',
+              twitter: 'DavidBuckster',
+              photo: 'david_buck.jpg'
+            }) %}
+              <p>I work in the Department for Environment Food and Rural Affairs. I've been working on Data and Digital Programmes in Defra since 2004, Before that I worked on Sports Policy at the Department for Culture Media and Sport.</p>
+            {% endcall %}
+
+            {% call ui.personCard({
+              name: 'David Durant',
+              twitter: 'cholten99',
+              photo: 'david_durant.jpg'
+            }) %}
+              <p>I work for the Government Digital Service as a Business Analyst. I spent years hanging around the edges of Young Rewired State, mySociety, the Open Rights Group, Citizen Beta et al. I’m interested in data (especially personal data stores), kids learning to code, better democratic participation using digital, and the impact on everything of ‘conversation UI’ (Amazon Alexa, Google Now, etc).</p>
+            {% endcall %}
+
+            {% call ui.personCard({
+              name: 'Beatrice Andrews',
+              twitter: 'beatriceemilya',
+              photo: 'beatrice_andrews.jpg'
+            }) %}
+              <p>I work in the Policy Lab, a small unit in Cabinet Office that helps civil servants use design, data and digital approaches in their policy-making. I’m a policy-maker who’s learnt design through doing: leading projects with DfE, Defra, MoJ amongst others. I’m constantly in awe of the people I work with: the expert civil servants who know absolutely everything about their niche (often obscure) policy areas; the designers who can turn abstract concepts into real things to prototype; the film ethnographers in my team who communicate the reality of people’s lives so brilliantly. </p>
+            {% endcall %}
+
+            {% call ui.personCard({
+              name: 'Paul Smith',
+              twitter: 'paulmsmith',
+              photo: 'paulsmith.jpg'
+            }) %}
+              <p>I'm a Senior Front-end Developer for the User Experience directorate at The Department for Work & Pensions. I'm interested in open data, civic technology and building user centred design systems. Previously of The BBC and various digital organisations across Europe and the US.</p>
+            {% endcall %}
+
+            {% call ui.personCard({
+              name: 'Audree Fletcher',
+              twitter: 'avfletcher',
+              photo: 'audree_fletcher.jpg'
+            }) %}
+              <p>I work at Barnardo’s as Head of Service Design. Before that I was Director of Design for the Department for International Trade and, before that, Digital Director for the same. I’ve only been in the digital/service design space since 2013 - I was a policymaker for a decade until I decided that I wanted a career at the intersection of digital, user-centred design and open policymaking.</p>
+            {% endcall %}
+
+            {% call ui.personCard({
+              name: 'Cassie Robinson',
+              twitter: 'CassieRobinson',
+              photo: 'cassie.jpg'
+            }) %}
+              <p>I work at Doteveryone as Strategic Design Director. I’m also the Co-founder of the Point People, Co-founder of Tech For Good Global, and founder of the Civic Shop. Before my role at Doteveryone I spent 15 years working as a strategic designer in public services and civic innovation with organisations like Participle, thinkpublic, Government Digital Service and the Co-op. I’m particularly interested in programmes like Systems Changers, where insights from frontline workers could inform policy in real-time. </p>
+            {% endcall %}
+
+            {# <iframe
+              width="600"
+              frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBHDSB3xQXEUVnzBe4dM-6BvCQJ2Zdrbbo
+                &q=Impact+Hub+Westminster" allowfullscreen class="o-map-frame">
+            </iframe> #}
 
           </div>
 

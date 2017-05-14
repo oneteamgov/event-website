@@ -1,0 +1,21 @@
+{% macro personCard(person) %}
+  <article class="c-person-card">
+    <div class="o-layout">
+      <div class="o-layout__item u-1/4 u-1/5@large">
+        <img src="/assets/img/organisers/{{ person.photo | default('paul_smith.jpg') }}" alt="" class="c-person-card__thumb">
+      </div>
+      <div class="o-layout__item u-3/4 u-4/5@large">
+        {% if person.name %}
+          <h3 class="c-page-section__subheading c-person-card__heading">{{ person.name }}</h3>
+        {% endif %}
+        {% if person.twitter %}
+          <p><a href="http://twitter.com/{{ person.twitter }}">@{{ person.twitter }}</a></p>
+        {% endif %}
+        {% if caller %}
+          {{ caller() }}
+        {% endif %}
+      </div>
+    </div>
+  </article>
+
+{% endmacro %}

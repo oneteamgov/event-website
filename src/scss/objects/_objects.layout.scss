@@ -7,8 +7,9 @@ $otg-use-markup-fix: false !default;
     max-width: 90%;
   }
   @include mq($from: xlarge) {
-    max-width: 80%;
+    max-width: 72%;
   }
+
 }
 
 .o-layout {
