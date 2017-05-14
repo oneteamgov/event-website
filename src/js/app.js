@@ -33,9 +33,9 @@ otg.countDown = function countDown() {
 
 otg.scrollTo = function scrollTo() {
 
-  let scrollLinks = document.querySelectorAll('.js-scrollTrigger')
+  let scrollLinks = document.querySelectorAll('.js-scrollTrigger');
 
-  scrollLinks.forEach((link, index) => {
+  [].forEach.call(scrollLinks, function (link) {
 
     link.addEventListener('click', () => {
       scrollIt(
@@ -45,7 +45,19 @@ otg.scrollTo = function scrollTo() {
       );
     });
 
-  })
+  });
+
+  // scrollLinks.forEach((link, index) => {
+  //
+  //   link.addEventListener('click', () => {
+  //     scrollIt(
+  //       document.querySelector(link.getAttribute('href')),
+  //       300,
+  //       'easeOutQuad'
+  //     );
+  //   });
+  //
+  // })
 
 }
 
