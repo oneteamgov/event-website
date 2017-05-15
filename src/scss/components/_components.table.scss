@@ -5,6 +5,10 @@
   border: 2px solid #000;
   color: #000;
 
+  @include mq($from: large) {
+    font-size: 1.4vw;
+  }
+
   $component: #{&};
 
   &__cell {
