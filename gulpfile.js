@@ -103,10 +103,6 @@ function jsCore() {
   })
     .transform(babelify, {
       presets: ['es2015']
-      // plugins: [
-      //   'transform-es3-property-literals',
-      //   'transform-es3-member-expression-literals'
-      // ]
     })
     .bundle()
     .pipe(source('app.js'))
