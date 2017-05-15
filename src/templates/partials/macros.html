@@ -6,7 +6,7 @@
           <h3 class="c-page-section__subheading c-person-card__heading">{{ person.name }}</h3>
         {% endif %}
         {% if person.twitter %}
-          <p><a href="http://twitter.com/{{ person.twitter }}">@{{ person.twitter }}</a></p>
+          <p><a href="http://twitter.com/{{ person.twitter }}">@{{ person.twitter }}</a> <svg class="o-icon o-icon--twitter" aria-hidden="true"><use xlink:href="#icon-twitter"></use></svg></p>
         {% endif %}
         {% if caller %}
           {{ caller() }}
@@ -20,7 +20,7 @@
 {% endmacro %}
 
 {% macro pageSection(section) %}
-<article class="c-page-section"{% if section.id %} id="{{ section.id }}"{% endif %}>
+<article class="c-page-section {{ 'c-page-section--' + section.modifier if section.modifier }}"{% if section.id %} id="{{ section.id }}"{% endif %}>
   <div class="o-contain">
     <h2 class="c-page-section__heading">{{ section.heading | default('No heading set') }}</h2>
     {% if caller %}

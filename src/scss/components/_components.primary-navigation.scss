@@ -49,6 +49,13 @@
       text-transform: uppercase;
       font-weight: bold;
       margin-right: 1em;
+      margin-bottom: 0.35em;
+    }
+
+    &__link {
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
   }
@@ -60,7 +67,7 @@
     }
 
     &__item {
-      font-size: 1.3rem;
+      font-size: 1.8rem;
     }
 
   }
@@ -72,7 +79,8 @@
     }
 
     &__item {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      margin-bottom: 0.4em;
     }
 
   }
