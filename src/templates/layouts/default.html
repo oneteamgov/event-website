@@ -30,12 +30,11 @@
     <meta name="twitter:description" property="og:description" content="Unconference, 29 June 2017 for UK policymakers, service designers, digital professionals & others about how we can make government more effective" />
     <meta name="twitter:image" property="og:image" content="https://oneteamgov.uk/assets/img/tc.jpg" />
     <meta name="twitter:image:alt" content="Logo of One Team Government" />
-    <link rel="dns-prefetch" href="">
     <link rel="preload" href="{{ assetPath }}/js/app.js" as="script">
 </head>
 <body>
 
-  <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <svg class="u-visuallyhidden" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <defs>
     <symbol id="icon-open-book" viewBox="0 0 20 20">
     <title>open-book</title>
@@ -57,9 +56,9 @@
       <div class="o-layout o-layout--middle o-layout--flush">
 
         <div class="o-layout__item u-1/1 u-1/5@medium">
-          <h1 class="c-global-header__title">
+          <p class="c-global-header__title">
 
-            <div class="c-global-header__logo">
+            <span class="c-global-header__logo">
               <svg viewBox="0 0 175 175" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="c-global-header__logo-svg">
                   <title>One Team Gov</title>
                   <defs>
@@ -74,11 +73,11 @@
                       </g>
                   </g>
               </svg>
-            </div>
+            </span>
 
-            <div class="c-global-header__title-text u-visuallyhidden@medium">2017</div>
+            <span class="c-global-header__title-text u-visuallyhidden@medium">2017</span>
 
-          </h1>
+          </p>
         </div>
 
         {% if not hidenav %}

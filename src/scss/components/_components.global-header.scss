@@ -25,6 +25,7 @@
 }
 
 .c-global-header__logo {
+  display: block;
   @include aspect-ratio(1,1,'.c-global-header__logo-svg');
   @include mq($until: medium) {
     width: 120px;
