@@ -1,5 +1,5 @@
 {% macro personCard(person) %}
-  <article class="c-person-card">
+  <article class="c-person-card {{ 'c-person-card--last' if person.last }}">
     <div class="o-layout">
       <div class="o-layout__item u-3/4 u-4/5@large">
         {% if person.name %}

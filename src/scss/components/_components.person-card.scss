@@ -4,8 +4,11 @@
   margin-bottom: 1.5rem;
   border-bottom: 2px dashed black;
 
-  &:last-of-type {
+  &:last-of-type,
+  &--last {
     border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   &__thumb {

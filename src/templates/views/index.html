@@ -298,10 +298,57 @@ title: One Team Government 2017
     {% call ui.personCard({
       name: 'Paul Smith',
       twitter: 'paulmsmith',
-      photo: 'paulsmith.jpg'
+      photo: 'paulsmith.jpg',
+      last: true
     }) %}
       <p>I'm a Senior Front-end Developer for the User Experience directorate at The Department for Work & Pensions. I'm interested in open data, civic technology and building user centred design systems. Previously of The BBC and various digital organisations across Europe and the US.</p>
     {% endcall %}
+
+  {% endcall %}
+
+  {# SECTION ####################################################################### #}
+
+  {% call ui.pageSection({
+    id: 'sponsors',
+    heading: "Sponsors"
+  }) %}
+
+    <div class="o-layout">
+
+      <div class="o-layout__item u-1/1 u-1/2@medium u-1/2@large">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem reiciendis, repellendus veritatis fugiat praesentium obcaecati nam expedita beatae, dolorum! Temporibus quia eos illum officiis, sint beatae quos magnam cumque dignissimos?</p>
+      </div>
+
+      <div class="o-layout__item u-1/1 u-1/2@medium u-1/2@large">
+
+        <div class="o-layout o-layout--huge c-sponsors-grid">
+
+            <div class="o-layout__item u-1/2">
+              <ul class="c-sponsors-grid__list">
+                <li class="c-sponsors-grid__list__item c-sponsors-grid__list__item--dft">
+                  <img src="/assets/img/sponsors/dft.jpg" alt="Department for Transport">
+                </li>
+                <li class="c-sponsors-grid__list__item c-sponsors-grid__list__item--dwp">
+                  <img src="/assets/img/sponsors/dwp.jpg" alt="Department for Work & Pensions">
+                </li>
+                <li class="c-sponsors-grid__list__item c-sponsors-grid__list__item-defra">
+                  <img src="/assets/img/sponsors/defra.jpg" alt="Department for Environment Food & Rural Affairs">
+                </li>
+              </ul>
+            </div>
+
+            <div class="o-layout__item u-1/2">
+              <ul class="c-sponsors-grid__list">
+                <li class="c-sponsors-grid__list__item c-sponsors-grid__list__item--gds"><img src="/assets/img/sponsors/gds.svg" alt="The Government Digital Service"></li>
+                <li class="c-sponsors-grid__list__item c-sponsors-grid__list__item--co"><img src="/assets/img/sponsors/co.jpg" alt="Cabinet Office"></li>
+              </ul>
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
 
   {% endcall %}
 
