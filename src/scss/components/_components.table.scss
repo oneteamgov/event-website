@@ -1,8 +1,12 @@
 .c-schedule {
+
   width: 100%;
   background: rgba(#fff,0.6);
   border: 2px solid #000;
   color: #000;
+
+  $component: #{&};
+
   &__cell {
     padding: 0.5em;
     &--heading {
@@ -21,11 +25,21 @@
       background: #000;
       background-color: rgba(#000,0.8);
       color: #fff;
+      border-bottom: 0;
     }
   }
   &__row {
     &:nth-child(odd) {
       background: rgba(#000,0.05);
+    }
+  }
+  tbody {
+    #{$component}__row {
+      &:first-child {
+        #{$component}__cell {
+          border-top: 0;
+        }
+      }
     }
   }
 }

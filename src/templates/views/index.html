@@ -5,6 +5,8 @@ title: One Team Government 2017
 
 {% block content %}
 
+  {# SECTION ####################################################################### #}
+
   {{
     ui.primaryCallToAction ({
       h1: 'One Team Government',
@@ -16,6 +18,8 @@ title: One Team Government 2017
       ticketsURL: 'https://otgov.eventbrite.co.uk'
     })
   }}
+
+  {# SECTION ####################################################################### #}
 
   {% call ui.pageSection({
     id: 'about',
@@ -124,7 +128,14 @@ title: One Team Government 2017
 
         <h3 class="c-page-section__subheading">Venue</h3>
 
-          <p><img src="/assets/img/venue.jpg" alt="A photograph of building and entrance"></p>
+          <div class="o-layout o-grid-block">
+            <div class="o-layout__item u-1/2">
+              <img src="/assets/img/venue1.jpg" alt="Photograph of the building" class="img-border">
+            </div>
+            <div class="o-layout__item u-1/2">
+              <img src="/assets/img/venue2.jpg" alt="Photograph of the building's entrance" class="img-border">
+            </div>
+          </div>
 
           <p><strong>Address</strong></p>
 
