@@ -4,6 +4,10 @@
   margin-bottom: 1.5rem;
   border-bottom: 2px dashed black;
 
+  &:last-of-type {
+    border-bottom: 0;
+  }
+
   &__thumb {
     -webkit-clip-path: polygon(99% 14%, 87% 98%, 3% 86%, 15% 3%);
     clip-path: polygon(99% 14%, 87% 98%, 3% 86%, 15% 3%);
@@ -12,6 +16,12 @@
 
   &__heading {
     margin-bottom: 0;
+  }
+
+  @include mq($from: large) {
+    p {
+      font-size: 2vw;
+    }
   }
 
 }

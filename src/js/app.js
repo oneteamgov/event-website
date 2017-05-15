@@ -12,6 +12,13 @@ otg.settings = {
     google: {
       families: ['Roboto:300,700']
     }
+  },
+  countdown: {
+      selector: '.timer',
+      initialize: true,
+      msgAfter: "OneTeamGov has happend, we hope you enjoyed the event.",
+      msgPattern : "{days} days, {hours} hours, {minutes}m {seconds}s left to",
+      dateEnd: new Date('Jun 28, 2017 09:30')
   }
 }
 
@@ -22,15 +29,12 @@ otg.webFonts = function webFonts() {
 }
 
 otg.countDown = function countDown() {
-  var countdown = new Countdown({
-      selector: '.timer',
-      initialize: true,
-      msgAfter: "OneTeamGov has happend, we hope you enjoyed the event.",
-      msgPattern : "{days} days, {hours} hours, {minutes}m {seconds}s left to",
-      dateEnd: new Date('Jun 28, 2017 09:30')
-  });
+  var countdown = new Countdown(otg.settings.countdown);
 }
 
+/**
+ * handles the scrollIt feature of links
+ */
 otg.scrollTo = function scrollTo() {
 
   let scrollLinks = document.querySelectorAll('.js-scrollTrigger');
@@ -46,18 +50,6 @@ otg.scrollTo = function scrollTo() {
     });
 
   });
-
-  // scrollLinks.forEach((link, index) => {
-  //
-  //   link.addEventListener('click', () => {
-  //     scrollIt(
-  //       document.querySelector(link.getAttribute('href')),
-  //       300,
-  //       'easeOutQuad'
-  //     );
-  //   });
-  //
-  // })
 
 }
 
