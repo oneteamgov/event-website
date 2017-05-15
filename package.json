@@ -17,6 +17,7 @@
     "browser-sync": "latest",
     "browserify": "latest",
     "classlist-polyfill": "latest",
+    "countdown": "^2.6.0",
     "del": "latest",
     "es6-object-assign": "latest",
     "es6-promise": "latest",
@@ -37,18 +38,25 @@
     "gulp-sourcemaps": "latest",
     "gulp-uglify": "latest",
     "gulp-util": "latest",
+    "html5shiv": "^3.7.3",
     "jquery": "^1.12.4",
+    "moment": "^2.18.1",
+    "moment-countdown": "0.0.3",
     "run-sequence": "latest",
+    "sass-mq": "^3.3.2",
     "vinyl-buffer": "latest",
-    "vinyl-source-stream": "latest"
+    "vinyl-source-stream": "latest",
+    "webfontloader": "^1.6.27"
   },
   "devDependencies": {
+    "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
+    "babel-plugin-transform-es3-property-literals": "^6.22.0",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "eslint-plugin-react": "^7.0.0"
+    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }

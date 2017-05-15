@@ -1,9 +1,391 @@
 ---
-title: Home
+title: One Team Government 2017
 ---
-
 {% extends 'layouts/default.html' %}
 
 {% block content %}
-  <h1><img src="assets/img/logo.png" alt="#OneTeamGov"></h1>
+
+  {# SECTION ####################################################################### #}
+
+  {{
+    ui.primaryCallToAction ({
+      h1: 'One Team Government',
+      banner: {
+        line1: 'Policymakers',
+        line2: 'Designers',
+        line3: 'Doers'
+      },
+      ticketsURL: 'https://otgov.eventbrite.co.uk'
+    })
+  }}
+
+  {# SECTION ####################################################################### #}
+
+  {% call ui.pageSection({
+    id: 'about',
+    heading: 'About One<span class="u-visuallyhidden">&nbsp;</span>Team<span class="u-visuallyhidden">&nbsp;</span>Gov' | safe
+  }) %}
+
+    <div class="o-layout o-layout--huge">
+
+      <div class="o-layout__item u-1/1 u-1/2@large">
+
+        <h3 class="c-page-section__subheading">Overview</h3>
+
+        <p>One Team Government brings together UK policymakers, service designers, digital professionals and cross-sector experts to talk openly and creatively about making government in the UK more effective by working together.  </p>
+        <p>We call this 'one team government'. It’s the idea that by bringing teams together to work in a truly multidisciplinary way, we can:</p>
+
+        <ul>
+          <li>offer better services to the public </li>
+          <li>give better advice to ministers </li>
+          <li>make the civil service more effective and efficient</li>
+        </ul>
+
+        <p>The event is jointly sponsored by the Civil Service digital and policy professions. It’s being run by a cross-disciplinary team of policy and digital professionals from many departments, who were inspired by <a href="https://sfadigital.blog.gov.uk/2017/03/24/dont-bring-policy-and-delivery-closer-together-make-them-the-same-thing/">this blog post by a senior policy advisor</a> on bringing policy and delivery closer together. </p>
+
+        <p>The event also has the backing of Jeremy Heywood as part of his vision of a Brilliant Civil Service.</p>
+
+      </div>
+
+      <div class="o-layout__item u-1/1 u-1/2@large">
+
+        <h3 class="c-page-section__subheading">Why are we doing this?</h3>
+
+        <p>The civil service is united by its values of integrity, honesty, objectivity and impartiality, but different professions are still divided in their skill sets and ways of working.</p>
+        <p> We want to bring together professionals who don't currently work seamlessly, to share and create specific ideas about how to work better together. Policy making and digital are our starting points but we’re not limited to these and welcome professionals from across government.</p>
+
+        <p><strong>Our aim is to:</strong></p>
+
+        <ul>
+          <li>introduce different professions to one another's ways of working and increase the empathy between them</li>
+          <li>share real, practical case studies of multidisciplinary working and celebrate its benefits</li>
+          <li>talk about what holds back one team working and create new ideas of how we can work better together</li>
+          <li>hear from teams that are making it work, both inside and outside government</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  {% endcall %}
+
+  {# SECTION ####################################################################### #}
+
+  {% call ui.pageSection({
+    id: 'OnTheDay',
+    heading: 'On the day'
+  }) %}
+
+    <div class="o-layout o-layout--huge">
+
+      <div class="o-layout__item u-1/1 u-1/2@large">
+
+        <h3 class="c-page-section__subheading">The event is an unconference</h3>
+
+        <p>This means there is no pre-set agenda; attendees will create the agenda themselves on the day, through a series of pitches made at the beginning. <a href="https://civilservice.blog.gov.uk/2017/03/09/the-joys-of-unconferencing/">Clare Moriarty, the Permanent Secretary at Defra, has blogged</a> about the joys of unconferencing.</p>
+
+        <p>There will be 5 time slots through the day, with parallel sessions run in each time slot. Attendees are free to go to whichever sessions they're most interested in. They're likely to be a mixture of case studies, open discussions and workshops.</p>
+
+        <h4 class="c-page-section__subheading">I've never been to an unconference before - how do I know what subjects to expect or pitch?</h4>
+
+        <p>We know some people might be unfamiliar with the unconference approach. So, to give you a flavour of the day, we've done a bit of research into the sessions people would like to either pitch or hear.</p>
+
+      </div>
+
+      <div class="o-layout__item u-1/1 u-1/2@large">
+
+        <h3 class="c-page-section__subheading"><strong>The most popular ideas were:</strong></h3>
+
+        <ul>
+          <li>creating the right team structure for a ‘one team’ approach</li>
+          <li>how to advise ministers when you're working iteratively</li>
+          <li>what is policy making? what is digital? what is service design?</li>
+          <li>how to 'do governance' better</li>
+          <li>how we build cross-profession networks so we all get better together</li>
+          <li>bringing policy making, digital and delivery into an end to end approach</li>
+          <li>who is doing 'the agile thing' at scale, and how?</li>
+          <li>practical ways of bringing policy and delivery together</li>
+        </ul>
+
+        <p>The list is just a sample. On the day people might pitch all or none of those ideas - it’s up to everyone attending to decide what’s most important to them.</p>
+
+      </div>
+
+    </div>
+
+  {% endcall %}
+
+  {# SECTION ####################################################################### #}
+
+  {% call ui.pageSection({
+    id: 'whereAndWhen',
+    heading: 'Where and when'
+  }) %}
+
+    <div class="o-layout o-layout--huge">
+
+      <div class="o-layout__item u-1/1 u-1/2@large">
+
+        <h3 class="c-page-section__subheading">Venue</h3>
+
+          <div class="o-layout o-grid-block">
+            <div class="o-layout__item u-1/2">
+              <img src="/assets/img/venue1.jpg" alt="Photograph of the building" class="img-border">
+            </div>
+            <div class="o-layout__item u-1/2">
+              <img src="/assets/img/venue2.jpg" alt="Photograph of the building's entrance" class="img-border">
+            </div>
+          </div>
+
+          <p><strong>Address</strong></p>
+
+          <p id="venueAddress" class="vcard">
+            <span class="fn n">
+              <span class="given-name"></span>
+              <span class="additional-name"></span>
+              <span class="family-name"></span>
+            </span>
+            <span class="org">Impact Hub Westminster<span class="u-visuallyhidden">,</span> </span>
+            <span class="adr">
+              <span class="street-address">1st Floor New Zealand House, <span>80 Haymarket<span class="u-visuallyhidden">,</span> </span></span>
+              <span class="locality">London<span class="u-visuallyhidden">,</span> </span>
+              <span class="postal-code">SW1Y 4TE</span>
+            </span>
+          </p>
+
+          <p><a href="https://www.google.co.uk/maps/place/Impact+Hub+Westminster/@51.507764,-0.131468,15z/data=!4m5!3m4!1s0x0:0xf370ed9d436a2d2a!8m2!3d51.507764!4d-0.131468" target="_blank">Open location in GoogleMaps</a> (this will open a new window)</p>
+
+      </div>
+
+      <div class="o-layout__item u-1/1 u-1/2@large">
+
+        <h3 class="c-page-section__subheading">Schedule</h3>
+
+        <table id="eventSchedule" class="c-schedule">
+          <thead>
+            <tr>
+              <th class="c-schedule__cell c-schedule__cell--heading c-schedule__cell--time">Time</th>
+              <th class="c-schedule__cell c-schedule__cell--heading c-schedule__cell--activity">Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="c-schedule__row">
+              <td class="c-schedule__cell c-schedule__cell--time">09:00</td>
+              <td class="c-schedule__cell c-schedule__cell--activity">Doors open</td>
+            </tr>
+            <tr class="c-schedule__row">
+              <td class="c-schedule__cell c-schedule__cell--time">09:30</td>
+              <td class="c-schedule__cell c-schedule__cell--activity">Welcome</td>
+            </tr>
+            <tr class="c-schedule__row">
+              <td class="c-schedule__cell c-schedule__cell--time">09:45</td>
+              <td class="c-schedule__cell c-schedule__cell--activity">Keynote (with Clare Moriarty)</td>
+            </tr>
+            <tr class="c-schedule__row">
+              <td class="c-schedule__cell c-schedule__cell--time">10:15</td>
+              <td class="c-schedule__cell c-schedule__cell--activity">Pitching</td>
+            </tr>
+            <tr class="c-schedule__row">
+              <td class="c-schedule__cell c-schedule__cell--time">11:00</td>
+              <td class="c-schedule__cell c-schedule__cell--activity">First session</td>
+            </tr>
+            <tr class="c-schedule__row">
+              <td class="c-schedule__cell c-schedule__cell--time">12:00</td>
+              <td class="c-schedule__cell c-schedule__cell--activity">Second session</td>
+            </tr>
+            <tr class="c-schedule__row">
+              <td class="c-schedule__cell c-schedule__cell--time">12:45</td>
+              <td class="c-schedule__cell c-schedule__cell--activity">Lunch</td>
+            </tr>
+            <tr class="c-schedule__row">
+              <td class="c-schedule__cell c-schedule__cell--time">13:30</td>
+              <td class="c-schedule__cell c-schedule__cell--activity">Third session</td>
+            </tr>
+            <tr class="c-schedule__row">
+              <td class="c-schedule__cell c-schedule__cell--time">14:30</td>
+              <td class="c-schedule__cell c-schedule__cell--activity">Fourth session</td>
+            </tr>
+            <tr class="c-schedule__row">
+              <td class="c-schedule__cell c-schedule__cell--time">15:30</td>
+              <td class="c-schedule__cell c-schedule__cell--activity">Fifth session</td>
+            </tr>
+            <tr class="c-schedule__row">
+              <td class="c-schedule__cell c-schedule__cell--time">16:30</td>
+              <td class="c-schedule__cell c-schedule__cell--activity">Close</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+  {% endcall %}
+
+  {# SECTION ####################################################################### #}
+
+  {# the is for the clip-path around the organiser thumbnails #}
+  <div class="u-visuallyhidden"><svg><defs><clipPath id="diamond" clipPathUnits="objectBoundingBox"><polygon points=".5,0 1,.5 .5,1 0,.5" /></clipPath></defs></svg></div>
+
+  {% call ui.pageSection({
+    id: 'organisers',
+    heading: "Organisers"
+  }) %}
+
+    {% call ui.personCard({
+      name: 'Beatrice Andrews',
+      twitter: 'beatriceemilya',
+      photo: 'beatrice_andrews.jpg'
+    }) %}
+    <p>I work in the Policy Lab, a small unit in Cabinet Office that helps civil servants use design, data and digital approaches in their policy-making. I’m a policy-maker who’s learnt design through doing: leading projects with DfE, Defra, MoJ amongst others. I’m constantly in awe of those I work with: the civil servants who know absolutely everything about their policy areas; the designers who  turn abstract concepts into real things; the film ethnographers who communicate the reality of people’s lives so brilliantly. </p>
+    {% endcall %}
+
+    {% call ui.personCard({
+      name: 'David Buck',
+      twitter: 'DavidBuckster',
+      photo: 'david_buck.jpg'
+    }) %}
+    <p>Since 2004 I have worked in the Department for Environment Food and Rural Affairs on Data and Digital Programmes. Before that I worked on Sports Policy at the Department for Culture Media and Sport.</p>
+    {% endcall %}
+
+    {% call ui.personCard({
+      name: 'Kit Collingwood-Richardson',
+      twitter: 'kitterati',
+      photo: 'kit.jpg'
+    }) %}
+    <p>I work for the Universal Credit programme at the Department for Work and Pensions, focusing on data. Before that I was at the Ministry of Justice from 2009-2016. I’ve been in digital government since 2012, and before that I was a policy maker. I am passionate about government reform in its widest sense, as well as the transformative power of technology, and about equality and diversity.</p>
+    {% endcall %}
+
+    {% call ui.personCard({
+      name: 'David Durant',
+      twitter: 'cholten99',
+      photo: 'david_durant.jpg'
+    }) %}
+      <p>I work for the Government Digital Service as a Business Analyst. I spent years hanging around the edges of Young Rewired State, mySociety, the Open Rights Group, Citizen Beta et al. I’m interested in data (especially personal data stores), kids learning to code, better democratic participation using digital, and the impact on everything of ‘conversation UI’ (Amazon Alexa, Google Now, etc).</p>
+    {% endcall %}
+
+    {% call ui.personCard({
+      name: 'Audree Fletcher',
+      twitter: 'avfletcher',
+      photo: 'audree_fletcher.jpg'
+    }) %}
+      <p>I work at Barnardo’s as Head of Service Design. Before that I was Director of Design for the Department for International Trade and, before that, Digital Director for the same. I’ve only been in the digital/service design space since 2013 - I was a policymaker for a decade until I decided that I wanted a career at the intersection of digital, user-centred design and open policymaking.</p>
+    {% endcall %}
+
+    {% call ui.personCard({
+      name: 'James Reeve',
+      twitter: 'jereeve',
+      photo: 'james_reeve.jpg'
+    }) %}
+      <p>I’m a husband, father and chemist, and also a policy advisor at the Department for Education. While I’m a scientist by training, I’ve adopted policymaking in the civil service - though I still haven’t worked out what ‘policymaking’ really is. I've never done this before (though I can code badly) and the apprenticeship service is my first foray into making government services better.</p>
+    {% endcall %}
+
+    {% call ui.personCard({
+      name: 'Jenny Huynh',
+      twitter: 'J3nnyKH',
+      photo: 'jenny.jpg'
+    }) %}
+      <p>I am currently a Digital and Technology Fast Streamer at the Department for Work and Pensions as a Business Analyst. Previous to that, I was a Performance Analyst at the Home Office, and in a past life, I worked in the City as a tech recruiter. I am interested in seeing how policy making actually works in real life (my only knowledge is from a public policy module at university!), and how policy and technology can work better together to provide better services to citizens.</p>
+    {% endcall %}
+
+    {% call ui.personCard({
+      name: 'Cassie Robinson',
+      twitter: 'CassieRobinson',
+      photo: 'cassie.jpg'
+    }) %}
+      <p>I'm Strategic Design Director at Doteveryone. I’m also Co-founder of the Point People and Tech For Good Global, and founder of the Civic Shop. Before Doteveryone I spent 15 years as a strategic designer in public services and civic innovation, with organisations like Participle, thinkpublic, Government Digital Service and the Co-op. I’m particularly interested in programmes like Systems Changers, where insights from frontline workers could inform policy in real-time. </p>
+    {% endcall %}
+
+    {% call ui.personCard({
+      name: 'Paul Smith',
+      twitter: 'paulmsmith',
+      photo: 'paulsmith.jpg'
+    }) %}
+      <p>I'm a Senior Front-end Developer for the User Experience directorate at The Department for Work & Pensions. I'm interested in open data, civic technology and building user centred design systems. Previously of The BBC and various digital organisations across Europe and the US.</p>
+    {% endcall %}
+
+    {% call ui.personCard({
+      name: 'Lorena Sutherland',
+      twitter: 'lolylena',
+      photo: 'lorena.jpg',
+      last: true
+    }) %}
+      <p>I’m a content designer. I help make web services clear and simple so the people using them can meet their goals. I’ve led content teams at the Ministry of Justice, Department for Education and others, and I've worked at the Government Digital Service. My distant past includes policy and law reform for the New Zealand Justice Department.</p>
+    {% endcall %}
+
+  {% endcall %}
+
+  {# SECTION ####################################################################### #}
+
+  {% call ui.pageSection({
+    id: 'sponsors',
+    heading: "Sponsors"
+  }) %}
+
+    <div class="o-layout">
+
+      <div class="o-layout__item u-1/1 u-1/2@medium u-1/2@large">
+        <p>We are very grateful to our sponsors, without whom we would not be able to stage this event. Their support and commitment to the aims of One Team Government: Better Together means a lot. </p>
+
+        <p>If your department or government agency could also sponsor the event, <a href="mailto:contact@oneteamgov.uk">please get in touch</a>. </p>
+      </div>
+
+      <div class="o-layout__item u-1/1 u-1/2@medium u-1/2@large">
+
+        <div class="o-layout o-layout--huge c-sponsors-grid">
+
+            <div class="o-layout__item u-1/2">
+              <ul class="c-sponsors-grid__list">
+                <li class="c-sponsors-grid__list__item c-sponsors-grid__list__item--dft">
+                  <img src="/assets/img/sponsors/dft.jpg" alt="Department for Transport">
+                </li>
+                <li class="c-sponsors-grid__list__item c-sponsors-grid__list__item--dwp">
+                  <img src="/assets/img/sponsors/dwp.jpg" alt="Department for Work & Pensions">
+                </li>
+                <li class="c-sponsors-grid__list__item c-sponsors-grid__list__item-defra">
+                  <img src="/assets/img/sponsors/defra.jpg" alt="Department for Environment Food & Rural Affairs">
+                </li>
+              </ul>
+            </div>
+
+            <div class="o-layout__item u-1/2">
+              <ul class="c-sponsors-grid__list">
+                <li class="c-sponsors-grid__list__item c-sponsors-grid__list__item--gds"><img src="/assets/img/sponsors/gds.jpg" alt="The Government Digital Service"></li>
+                <li class="c-sponsors-grid__list__item c-sponsors-grid__list__item--co"><img src="/assets/img/sponsors/co.jpg" alt="Cabinet Office"></li>
+                <li class="c-sponsors-grid__list__item c-sponsors-grid__list__item--co"><img src="/assets/img/sponsors/dfe.jpg" alt="Department for Education"></li>
+              </ul>
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  {% endcall %}
+
+  {# SECTION ####################################################################### #}
+
+  {% call ui.pageSection({
+    id: 'contact',
+    heading: 'Contact'
+  }) %}
+
+    <div class="o-layout">
+
+      <div class="o-layout__item u-1/1 u-1/2@medium">
+        <p>The best way to contact us is by email<br>
+        <a href="mailto:contact@oneteamgov.uk">contact@oneteamgov.uk</a></p>
+        <p>We are also tweeting from <a href="http://twitter.com/oneteamgov"><svg class="o-icon o-icon--twitter" aria-hidden="true"><use xlink:href="#icon-twitter"></use></svg>@oneteamgov</a> with the hashtag: <a href="http://twitter.com/hashtag/oneteamgov">#oneteamgov</a></p>
+      </div>
+
+      <div class="o-layout__item u-1/1 u-1/2">
+        <p class="u-tar@medium">
+          <a href="http://diversitycharter.org/"><img src="/assets/img/sd.png" alt="Supporting Diversity"></a>
+        </p>
+      </div>
+
+    </div>
+
+  {% endcall %}
+
 {% endblock %}

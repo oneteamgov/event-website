@@ -1,0 +1,74 @@
+{% macro personCard(person) %}
+  <article class="c-person-card {{ 'c-person-card--last' if person.last }}">
+    <div class="o-layout">
+      <div class="o-layout__item u-3/4 u-4/5@large">
+        {% if person.name %}
+          <h3 class="c-page-section__subheading c-person-card__heading">{{ person.name }}</h3>
+        {% endif %}
+        {% if person.twitter %}
+          <p><a href="http://twitter.com/{{ person.twitter }}">@{{ person.twitter }}</a> <svg class="o-icon o-icon--twitter" aria-hidden="true"><use xlink:href="#icon-twitter"></use></svg></p>
+        {% endif %}
+        {% if caller %}
+          {{ caller() }}
+        {% endif %}
+      </div>
+      <div class="o-layout__item u-1/4 u-1/5@large">
+        <img src="/assets/img/organisers/{{ person.photo | default('paul_smith.jpg') }}" alt="" class="c-person-card__thumb">
+      </div>
+    </div>
+  </article>
+{% endmacro %}
+
+{% macro pageSection(section) %}
+<article class="c-page-section {{ 'c-page-section--' + section.modifier if section.modifier }}"{% if section.id %} id="{{ section.id }}"{% endif %}>
+  <div class="o-contain">
+    <h2 class="c-page-section__heading">{{ section.heading | default('No heading set') }}</h2>
+    {% if caller %}
+      {{ caller() }}
+    {% endif %}
+  </div>
+</article>
+{% endmacro %}
+
+{% macro primaryCallToAction(cta) %}
+<article class="c-primary-cta" id="intro">
+
+  <div class="c-primary-cta__content">
+
+    <div class="o-contain">
+
+      <div class="c-primary-cta__intro">
+
+        <div class="o-layout o-layout--flush">
+
+          <div class="o-layout__item u-1/1">
+            <h1 class="c-primary-cta__title">{{ cta.h1 | default('One Team Gov') }}</h1>
+          </div>
+
+          <div class="o-layout__item u-1/1 u-1/2@medium">
+
+            <p class="o-banner-text c-primary-cta__headline">
+              <span class="o-banner-text__line">{{ cta.banner.line1 }}</span>
+              <span class="o-banner-text__line">Designers</span>
+              <span class="o-banner-text__line">Doers</span>
+            </p>
+
+            <p class="c-primary-cta__countdown">
+              <span class="c-primary-cta__countdown-timer timer"></span>
+              <span class="c-primary-cta__action">
+                <a href="{{ cta.ticketsURL | d('https://otgov.eventbrite.co.uk') }}" class="c-primary-cta__countdown-link">Get your tickets</a>
+              </span>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</article>
+{% endmacro %}
