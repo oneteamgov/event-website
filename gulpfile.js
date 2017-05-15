@@ -101,7 +101,13 @@ function jsCore() {
     entries: `${paths.src.js}app.js`,
     debug: !gulpUtil.env.production
   })
-    .transform(babelify, { presets: ['es2015'] })
+    .transform(babelify, {
+      presets: ['es2015']
+      // plugins: [
+      //   'transform-es3-property-literals',
+      //   'transform-es3-member-expression-literals'
+      // ]
+    })
     .bundle()
     .pipe(source('app.js'))
     .pipe(buffer())
