@@ -38,6 +38,7 @@
     "gulp-sourcemaps": "latest",
     "gulp-uglify": "latest",
     "gulp-util": "latest",
+    "html5shiv": "^3.7.3",
     "jquery": "^1.12.4",
     "moment": "^2.18.1",
     "moment-countdown": "0.0.3",
