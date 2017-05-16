@@ -47,3 +47,23 @@
   }
 
 }
+
+.promo-text {
+  text-align: center;
+  font-size: 3.5vw;
+  border-bottom: 3px solid #000;
+  margin-bottom: 1rem;
+  line-height: 1;
+  padding-bottom: 1rem;
+
+  @include mq($until: medium) {
+    padding-bottom: 0;
+  }
+
+  @include mq($from: large) {
+    border-bottom-width: 6px;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    font-size: 2.5vw;
+  }
+}

@@ -5,8 +5,13 @@
 
   &__title {
     font-weight: normal;
-    font-size: 7vw;
+    font-size: 6.8vw;
     line-height: 1;
+    margin-bottom: 0.55vw;
+  }
+
+  &__date {
+    font-size: 1.3rem;
   }
 
   &__intro {
@@ -67,7 +72,7 @@
     @include aspect-ratio(640,247,'.c-primary-cta__content');
 
     &__intro {
-      padding: 3.5vw 0;
+      padding: 3vw 0;
       line-height: 1.6;
       font-size: 2vw;
     }
@@ -81,7 +86,12 @@
 
     &__title {
       font-size: 3.7vw;
-      margin-bottom: 2vw;
+      margin-bottom: 0.75vw;
+    }
+
+    &__date {
+      font-size: 1.5vw;
+      // font-weight: bold;
     }
 
     &__countdown {
