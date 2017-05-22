@@ -1,22 +1,3 @@
-// .c-sponsors-grid {
-//   img {
-//     margin-bottom: 1.5rem;
-//   }
-//   &__item {
-//     img {
-//       max-width: 100%;
-//       display: inline-block;
-//     }
-//     &--gds {
-//       text-align: center;
-//       img {
-//         max-width: 150px;
-//         text-align: center;
-//       }
-//     }
-//   }
-// }
-
 .c-sponsors-grid__list {
   list-style-type: none;
   margin: 0;
@@ -26,7 +7,7 @@
     padding: 0;
     display: block;
     margin-bottom: 2rem!important;
-    @include mq($from: large) {
+    @include mq($from: small) {
       img {
         max-width: 70%;
       }
