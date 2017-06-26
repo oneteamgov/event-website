@@ -16,9 +16,9 @@ otg.settings = {
   countdown: {
       selector: '.timer',
       initialize: true,
-      msgAfter: "OneTeamGov has happend, we hope you enjoyed the event.",
-      msgPattern : "{days} days, {hours} hours, {minutes}m {seconds}s left to",
-      dateEnd: new Date('Jun 28, 2017 09:30')
+      msgAfter: "<strong>OneTeamGov takes place today</strong>, we hope you enjoy the event. Follow the <a href='https://twitter.com/hashtag/oneteamgov'>#oneteamgov</a> hashtag on twitter.",
+      msgPattern : "Only {days} days, {hours} hours, {minutes}m {seconds}s until doors open. See you soon.",
+      dateEnd: new Date('Jun 29, 2017 09:30')
   }
 }
 
