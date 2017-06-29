@@ -1,0 +1,64 @@
+---
+title: One Team Government 2017
+---
+{% extends 'layouts/default.html' %}
+
+{% block content %}
+
+  {# SECTION ####################################################################### #}
+
+  {{ ui.primaryHeading({
+    title: "Follow what's happening"
+  })}}
+
+  {# SECTION ####################################################################### #}
+
+  {% call ui.pageSection({
+    id: 'about',
+    heading: 'About One<span class="u-visuallyhidden">&nbsp;</span>Team<span class="u-visuallyhidden">&nbsp;</span>Gov' | safe
+  }) %}
+
+    <div class="o-layout o-layout--huge">
+
+      <div class="o-layout__item u-1/1 u-1/2@large">
+
+        <h3 class="c-page-section__subheading">Overview</h3>
+
+        <p>One Team Government brings together UK policymakers, service designers, digital professionals and cross-sector experts to talk openly and creatively about making government in the UK more effective by working together.  </p>
+        <p>We call this 'one team government'. It’s the idea that by bringing teams together to work in a truly multidisciplinary way, we can:</p>
+
+        <ul>
+          <li>offer better services to the public </li>
+          <li>give better advice to ministers </li>
+          <li>make the civil service more effective and efficient</li>
+        </ul>
+
+        <p>The event is jointly sponsored by the Civil Service digital and policy professions. It’s being run by a cross-disciplinary team of policy and digital professionals from many departments, who were inspired by <a href="https://sfadigital.blog.gov.uk/2017/03/24/dont-bring-policy-and-delivery-closer-together-make-them-the-same-thing/">this blog post by a senior policy advisor</a> on bringing policy and delivery closer together. </p>
+
+        <p>The event also has the backing of Jeremy Heywood as part of his vision of a Brilliant Civil Service.</p>
+
+      </div>
+
+      <div class="o-layout__item u-1/1 u-1/2@large">
+
+        <h3 class="c-page-section__subheading">Why are we doing this?</h3>
+
+        <p>The civil service is united by its values of integrity, honesty, objectivity and impartiality, but different professions are still divided in their skill sets and ways of working.</p>
+        <p> We want to bring together professionals who don't currently work seamlessly, to share and create specific ideas about how to work better together. Policy making and digital are our starting points but we’re not limited to these and welcome professionals from across government.</p>
+
+        <p><strong>Our aim is to:</strong></p>
+
+        <ul>
+          <li>introduce different professions to one another's ways of working and increase the empathy between them</li>
+          <li>share real, practical case studies of multidisciplinary working and celebrate its benefits</li>
+          <li>talk about what holds back one team working and create new ideas of how we can work better together</li>
+          <li>hear from teams that are making it work, both inside and outside government</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  {% endcall %}
+
+{% endblock %}

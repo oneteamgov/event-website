@@ -50,12 +50,18 @@
 
             <p class="o-banner-text c-primary-cta__headline">
               <span class="o-banner-text__line">{{ cta.banner.line1 }}</span>
-              <span class="o-banner-text__line">Designers</span>
-              <span class="o-banner-text__line">Doers</span>
+              {% if cta.banner.line2 %}
+                <span class="o-banner-text__line">{{ cta.banner.line2 }}</span>
+              {% endif %}
+              {% if cta.banner.line3 %}
+                <span class="o-banner-text__line">{{ cta.banner.line3 }}</span>
+              {% endif %}
             </p>
 
             <p class="c-primary-cta__countdown">
-              <span class="c-primary-cta__countdown-timer timer"></span>
+              {% if not cta.supressTimer %}
+                <span class="c-primary-cta__countdown-timer timer"></span>
+              {% endif %}
               {# <span class="c-primary-cta__action">
                 <a href="{{ cta.ticketsURL | d('https://otgov.eventbrite.co.uk') }}" class="c-primary-cta__countdown-link">Get your tickets</a>
               </span> #}
@@ -72,4 +78,12 @@
   </div>
 
 </article>
+{% endmacro %}
+
+{% macro primaryHeading(heading) %}
+<div class="c-primary-heading">
+  <div class="o-contain">
+    <h1 class="c-primary-heading__title">{{ heading.title | d('Title here') }}</h1>
+  </div>
+</div>
 {% endmacro %}
